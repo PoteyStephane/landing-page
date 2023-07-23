@@ -1,0 +1,191 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  all: unset;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.btn-sign-up {
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 1px 60px;
+  border-radius: 5px;
+}
+
+header {
+  background: #1f2937;
+  color: #f9faf8;
+  padding: 1rem 14rem;
+}
+header .container {
+  width: 850px;
+  margin: 0 auto;
+}
+header .container .nav-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .nav-section h2 {
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+header .container .nav-section .nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+header .container .nav-section .nav-links a {
+  color: white;
+}
+header .container .content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0;
+  gap: 2rem;
+}
+header .container .content-section .left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+header .container .content-section .left .btn-sign-up {
+  padding: 1px 35px;
+  text-align: center;
+  width: 75px;
+  background: #3882f6;
+}
+header .container .content-section .right .placeholder {
+  color: #e5e7eb;
+  background: gray;
+  text-align: center;
+  padding: 3rem 6.5rem;
+}
+
+.information-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 13rem;
+  margin-top: 3rem;
+}
+.information-section h2 {
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+.information-section .container {
+  width: 850px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin: 3rem 0 6rem;
+}
+.information-section .container .card-content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 150px;
+  margin: 0 auto;
+  gap: 8px;
+}
+.information-section .container .card-content .square {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #3882f6;
+  border-radius: 15px;
+}
+
+.quote-section {
+  padding: 7rem 13rem;
+  display: flex;
+  flex-direction: column;
+  background: #e5e7eb;
+}
+.quote-section .container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.quote-section .container p {
+  position: relative;
+  font-size: 36px;
+  font-style: italic;
+}
+.quote-section .container p::after {
+  font-style: normal;
+  position: absolute;
+  content: "-Thor, God of Thunder";
+  font-size: 24px;
+  font-weight: bolder;
+  right: 25px;
+  bottom: -35px;
+}
+
+.call-action-section {
+  padding: 7rem 13rem;
+  color: white;
+}
+.call-action-section .container {
+  background: #3882f6;
+  border-radius: 5px;
+  padding: 4rem 15rem;
+  display: flex;
+  justify-content: space-around;
+}
+.call-action-section .container .btn-sign-up {
+  border: 2px solid white;
+}/*# sourceMappingURL=style.css.map */

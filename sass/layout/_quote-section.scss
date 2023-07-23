@@ -1,0 +1,47 @@
+@use "../abstracts/colors" as *;
+@use "../base/typography" as *;
+
+.quote-section {
+  padding: 7rem 13rem;
+  display: flex;
+  flex-direction: column;
+  background: $quoteBackgroundColor;
+
+  .container {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    p {
+      position: relative;
+      font-size: $informationHeader;
+      font-style: italic;
+
+      &::after {
+        font-style: normal;
+        position: absolute;
+        content: "-Thor, God of Thunder";
+        font-size: $headerLogo;
+        font-weight: bolder;
+        right: 25px;
+        bottom: -35px;
+      }
+    }
+  }
+}
+
+.call-action-section {
+  padding: 7rem 13rem;
+  color: white;
+
+  .container {
+    background: $btnColor;
+    border-radius: 5px;
+    padding: 4rem 15rem;
+    display: flex;
+    justify-content: space-around;
+
+    .btn-sign-up {
+      border: 2px solid white;
+    }
+  }
+}

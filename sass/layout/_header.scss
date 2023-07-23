@@ -1,0 +1,60 @@
+@use "../abstracts/" as *;
+@use "../base/typography" as t;
+
+header {
+  background: $darkBackGround;
+  color: $heroMain;
+  padding: 1rem 14rem;
+
+  .container {
+    width: 850px;
+    margin: 0 auto;
+    .nav-section {
+      @include flexHorizontal(between);
+      h2 {
+        font-weight: 900;
+        font-size: t.$headerLogo;
+        text-transform: capitalize;
+      }
+
+      .nav-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        a {
+          color: white;
+        }
+      }
+    }
+
+    .content-section {
+      @include flexHorizontal(center);
+      padding: 7rem 0;
+      gap: 2rem;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+
+        .btn-sign-up {
+          padding: 1px 35px;
+          text-align: center;
+          width: 75px;
+          background: $btnColor;
+        }
+      }
+
+      .right {
+        .placeholder {
+          color: $quoteBackgroundColor;
+          background: gray;
+          text-align: center;
+          padding: 3rem 6.5rem;
+        }
+      }
+    }
+  }
+}

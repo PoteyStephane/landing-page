@@ -1,0 +1,39 @@
+@mixin flexHorizontal($dispotion) {
+  @if $dispotion == center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } @else if $dispotion == between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } @else if $dispotion == around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@mixin flexVertical($dispotion) {
+  @if $dispotion == center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } @else if $dispotion == between {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  } @else if $dispotion == around {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@mixin grid-center() {
+  display: grid;
+  place-items: center;
+}

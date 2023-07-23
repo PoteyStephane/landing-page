@@ -1,0 +1,41 @@
+@use "../abstracts/colors" as *;
+@use "../base/" as *;
+
+.information-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 13rem;
+  margin-top: 3rem;
+
+  h2 {
+    font-size: $informationHeader;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+
+  .container {
+    width: 850px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin: 3rem 0 6rem;
+
+    .card-content {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 150px;
+      margin: 0 auto;
+      gap: 8px;
+
+      .square {
+        width: 150px;
+        height: 150px;
+        border: 3px solid $btnColor;
+        border-radius: 15px;
+      }
+    }
+  }
+}
